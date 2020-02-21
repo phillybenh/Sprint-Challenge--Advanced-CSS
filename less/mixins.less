@@ -11,3 +11,20 @@
   justify-content: @justify;
   align-items: @align;
 }
+
+.button(@bgColor:@buttonBG, @fontColor:@buttonColor, @width:150px) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: @bgColor;
+  color: @fontColor;
+  cursor: pointer;
+  width: @width;
+  height: 45px;
+  font-size: 2.4rem;
+  border-radius: 8px;
+  &:hover {
+    background-color: @fontColor;
+    color: @bgColor;
+  }
+}

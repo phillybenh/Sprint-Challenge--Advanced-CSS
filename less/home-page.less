@@ -1,21 +1,23 @@
 // Home Content
 
 .home {
-
   .intro {
-
     h2 {
       padding: 15px;
     }
 
     p {
-      padding:0 15px;
+      padding: 0 15px;
     }
-  
+    img {
+      max-width: 100%;
+      width: 100%;
+      border-radius: 10px;
+    }
   }
 
   .space-images {
-    display: flex;
+    .rowFlex();
     flex-wrap: wrap;
     width: 100%;
 
@@ -43,8 +45,8 @@
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
-    display: flex;
-    justify-content: center;
+
+    .rowFlex(@justify:center);
 
     .walk-text {
       width: 50%;
@@ -58,13 +60,14 @@
       }
 
       .btn {
+        .button();
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+
       img {
         width: 100%;
         height: auto;
@@ -72,4 +75,4 @@
       }
     }
   }
-}// home
+} // home
