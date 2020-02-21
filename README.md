@@ -34,13 +34,26 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+    Adaptive websites use media breakpoints and different styling rules, but the site is fixed at specific sizes. A fully responsive website combines concepts from fluid sites and adaptive sites to smoothly scale and include specific style rules for certain screen sizes.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+    Mobile First: With this design strategy, you style a mobile-sized version of the site first and use your media breakpoints to adapt the design to larger screens (using min-width).
+    
+    Desktop First: With this design strategy, you style a desktop-sized version of the site first and use your media breakpoints to adapt the design to smaller screens (using max-width).
+
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+    ‘Font-size: 62.5%’ effectively resets the standard browser 16px font-size to 10px. This makes using rem units easy and intuitive. For example, 1.2rem becomes equivalent to 12px but is still scalable.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+    A CSS preprocessor allows you to write styling rules in the preprocessors syntax and it adds in features that pure CSS does not have (variables, mixins, functions, etc.). The preprocessor-language is then converted into pure CSS by a compiler. WHen someone accesses a website styled with a CSS processor the browser only receives and displays the CSS that was converted by the compiler. 
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+    Mixins are my favorite concept because they can save a lot of time and effort by cutting down on repeated work (variables are a close second, adn will probably overtake mixins if I ever have to make a lot of changes to a site). The concepts have seemed pretty logical to me, so far. Using a mixin to implement CSS animations was a little confusing (like, how do I use it on my button mixin, or should I just combine them into one?).
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
